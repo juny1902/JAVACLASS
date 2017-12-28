@@ -63,28 +63,6 @@ class ArrayOperation {
 		}
 	}
 
-	public int[][] prod() {
-		if (a_col != b_row) {
-			System.out.println();
-			System.out.println("<Error> Cannot sum different size of matrix.");
-			return null;
-		} else {
-			int sum = 0;
-			result = new int[a_row][b_col];
-			for (int i = 0; i < a_row; i++) {
-				for (int j = 0; j < b_col; j++) {
-					for (int k = 0; k < b_row; k++) {
-						sum += a[i][k] * b[k][j];
-					}
-					result[i][j] = sum;
-				}
-			}
-			r_row = result.length;
-			r_col = result[0].length;
-			return result;
-		}
-	}
-
 	public int[][] add() {
 		if (a_row != b_row && a_col != b_col) {
 			System.out.println();
@@ -122,6 +100,28 @@ class ArrayOperation {
 		}
 	}
 
+	public int[][] prod() {
+		if (a_col != b_row) {
+			System.out.println();
+			System.out.println("<Error> Cannot sum different size of matrix.");
+			return null;
+		} else {
+			int sum = 0;
+			result = new int[a_row][b_col];
+			for (int i = 0; i < a_row; i++) {
+				for (int j = 0; j < b_col; j++) {
+					for (int k = 0; k < b_row; k++) {
+						sum += a[i][k] * b[k][j];
+					}
+					result[i][j] = sum;
+				}
+			}
+			r_row = result.length;
+			r_col = result[0].length;
+			return result;
+		}
+	}
+
 }
 
 public class ArraySum {
@@ -133,16 +133,13 @@ public class ArraySum {
 		ArrayOperation ab = new ArrayOperation(b, a);
 		ArrayOperation cd = new ArrayOperation(ab.prod(), ab.prod());
 		int keycode = 0;
-		while(run)
-		{
+		while (run) {
 			try {
 				keycode = System.in.read();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			switch(keycode)
-			{
+			switch (keycode) {
 			case 'A':
 				ab.viewCurrentMatrices();
 				ab.prod();
@@ -155,14 +152,8 @@ public class ArraySum {
 				break;
 			default:
 				run = false;
-					
-			}
-			
-	
-			
-		}
-		
-		
 
+			}
+		}
 	}
 }
