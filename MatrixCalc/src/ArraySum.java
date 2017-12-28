@@ -7,7 +7,6 @@ class ArrayOperation {
 	private int b_row, b_col;
 	private int[][] result;
 	private int r_row, r_col;
-
 	public static int summarize(int i) {
 		int sum = 0, cnt = 0;
 		while (cnt <= i) {
