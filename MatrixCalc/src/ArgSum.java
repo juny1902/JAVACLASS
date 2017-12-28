@@ -1,3 +1,4 @@
+import java.util.Calendar;
 
 public class ArgSum {
 
@@ -28,7 +29,15 @@ public class ArgSum {
 	}
 
 	public static void main(String args[]) {
-		System.out.println("Today is " + Weekdays.FRI + " of " + Seasons.FALL);
+		Calendar cal = Calendar.getInstance();
+		// System.out.println(cal.get(Calendar.DAY_OF_WEEK));
+		int today = cal.get(Calendar.DAY_OF_WEEK);
+		if (today == Calendar.THURSDAY) {
+			System.out.println("Today is " + Weekdays.THU + " of " + Seasons.WINTER);
+		}
+		else{
+			System.out.println("The other days");
+		}
 		arrayCopy2();
 	}
 }
