@@ -10,7 +10,12 @@ public class Car implements Motion {
 		System.out.println("To use : Car(차종, 실린더 수, 배기량, 휠 직경, 구동륜 수)");
 	}
 
-	
+	public static void sellCar(Car c){
+		carCount--;
+		System.out.println(c.name + "을 팔았습니다.");
+		c = null;
+		System.gc();
+	}
 
 	public Car(String name, int c, int cc, int r, int n) {
 		carCount++;
