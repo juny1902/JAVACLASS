@@ -30,11 +30,15 @@ public class CarExample {
 		Car grand = new Car("Grandeur", 4, 2700, 19, 4);
 		Car benz = new Car("Benz", 8, 5000, 20, 4);
 		Truck monster = new Truck("Monster", 16, 13000, 30, 6, 15000);
-		
+		Car porter = new Truck("Porter", 4, 2000, 15, 4, 1000);
+
+		Car.getCarQuantity();
+
 		performanceTest(tico);
 		performanceTest(accent);
 		performanceTest(grand);
 		performanceTest(benz);
 		performanceTest(monster);
+		performanceTest(porter);
 	}
 }

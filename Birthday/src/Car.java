@@ -1,17 +1,27 @@
 
 public class Car implements Motion {
+	private static int carCount;
 	private int speed;
 	private String name;
 	private Engine e;
 	private Tire t;
-	public static void help(){
+
+	public static void help() {
 		System.out.println("To use : Car(차종, 실린더 수, 배기량, 휠 직경, 구동륜 수)");
 	}
+
+	
+
 	public Car(String name, int c, int cc, int r, int n) {
+		carCount++;
 		this.name = name;
 		this.speed = 0;
 		e = new Engine(c, cc);
 		t = new Tire(r, n);
+	}
+
+	public static void getCarQuantity() {
+		System.out.printf(">> 차량 %d 대 보유중\n", carCount);
 	}
 
 	public void carInfo() {
