@@ -20,17 +20,19 @@ public class CarExample {
 		c.carInfo();
 		getDyno(c);
 	}
-	public static void sum(int ... args){ // Argument as a list.
-		int sum=0;
-		for(int i=0;i<args.length;i++){
+
+	public static void sum(int... args) { // Argument as a list.
+		int sum = 0;
+		for (int i = 0; i < args.length; i++) {
 			sum += args[i];
 		}
 		System.out.println(sum);
 	}
+
 	public static void main(String[] args) {
 		Car.help();
 		Truck.help();
-		
+
 		Car tico = new Car("Tico", 3, 900, 10, 2);
 		Car accent = new Car("Accent", 4, 1500, 14, 2);
 		Car grand = new Car("Grandeur", 4, 2700, 19, 4);
@@ -47,7 +49,7 @@ public class CarExample {
 		performanceTest(benz);
 		performanceTest(monster);
 		performanceTest(porter);
-		
-		sum(1,2,3,4,5,6,7,8,9,10,100);
+
+		sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100);
 	}
 }
