@@ -22,6 +22,6 @@ public class InstanceofExample {
 		
 		Parent parentB = new Parent();
 		method1(parentB);
-		method2(parentB); //예외 발생
+		method2(parentB); //예외 발생 (자동변환이 발생하지 않았기 때문.)
 	}
 }

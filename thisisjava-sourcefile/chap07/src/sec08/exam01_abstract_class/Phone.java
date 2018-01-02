@@ -3,7 +3,6 @@ package sec08.exam01_abstract_class;
 public abstract class Phone {
 	//필드
 	public String owner;
-	
 	//생성자
 	public Phone(String owner) {
 		this.owner = owner;

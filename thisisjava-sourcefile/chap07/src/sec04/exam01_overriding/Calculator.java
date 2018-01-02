@@ -5,5 +5,8 @@ public class Calculator {
 		System.out.println("Calculator °´Ã¼ÀÇ areaCircle() ½ÇÇà");
 		return 3.14159 * r * r; 
 	}
+	int plus(int a, int b){
+		return a+b;
+	}
 }
 

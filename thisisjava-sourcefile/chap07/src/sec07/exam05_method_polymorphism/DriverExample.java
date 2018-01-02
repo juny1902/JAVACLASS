@@ -6,8 +6,9 @@ public class DriverExample {
 		
 		Bus bus = new Bus();
 		Taxi taxi = new Taxi();
-		
+		K5 k5 = new K5();
 		driver.drive(bus);
 		driver.drive(taxi);
+		driver.drive(k5);
 	}
 }

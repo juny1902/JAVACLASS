@@ -3,7 +3,7 @@ package sec02.exam01_inheritance;
 public class DmbCellPhoneExample {
 	public static void main(String[] args) {
 		//DmbCellPhone 객체 생성
-		DmbCellPhone dmbCellPhone = new DmbCellPhone("자바폰", "검정", 10);
+		DmbCellPhone dmbCellPhone = new DmbCellPhone("자바폰", "검정", 99);
 		
 		//CellPhone으로부터 상속 받은 필드
 		System.out.println("모델: " + dmbCellPhone.model);
@@ -19,10 +19,14 @@ public class DmbCellPhoneExample {
 		dmbCellPhone.receiveVoice("안녕하세요! 저는 홍길동인데요");
 		dmbCellPhone.sendVoice("아~ 예 반갑습니다.");
 		dmbCellPhone.hangUp();
-
+		
 		//DmbCellPhone의 메소드 호출
 		dmbCellPhone.turnOnDmb();
-		dmbCellPhone.changeChannelDmb(12);
+		if(dmbCellPhone.channel == 99)
+			System.out.println("헬로헬로");
+		dmbCellPhone.changeChannelDmb(19);
 		dmbCellPhone.turnOffDmb();
+		
+		
 	}
 }
