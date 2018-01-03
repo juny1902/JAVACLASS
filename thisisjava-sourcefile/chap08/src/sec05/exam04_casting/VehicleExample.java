@@ -6,9 +6,9 @@ public class VehicleExample {
 
 		vehicle.run();
 		//vehicle.checkFare(); (x)
-
+		System.out.println(vehicle instanceof Bus);
 		Bus bus = (Bus) vehicle;  //강제타입변환
-
+		
 		bus.run();
 		bus.checkFare();
 	}
