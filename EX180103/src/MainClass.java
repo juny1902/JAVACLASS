@@ -21,6 +21,10 @@ public class MainClass {
 		m.intro(); // Default method in interface
 		giveYourself(i); // i is inherited from interface.
 		giveYourself(m); // m is inherited from interface.
+		
+		DoSomething.doBasic();
+		i.doIt();
+		i.doThat();
 
 		Introdution.about(); // Static method in interface and I references constant field of it.
 	}

@@ -6,5 +6,11 @@ public class RemoteControlExample {
 		
 		RemoteControl rc = tv;
 		Searchable searchable = tv;
+		tv.turnOn();
+		tv.setVolume(99);
+		tv.search("http:/www.naver.com");
+		tv.setMute(false);
+		tv.turnOff();
+		
 	}
 }

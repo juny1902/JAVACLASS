@@ -1,0 +1,10 @@
+
+public interface DoSomething {
+	static void doBasic(){
+		System.out.println("싐싐");
+	}
+	default void doIt(){
+		System.out.println("후핳후핳");
+	}
+	public void doThat();
+}

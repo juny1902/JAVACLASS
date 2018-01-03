@@ -1,4 +1,4 @@
-public class Implementation extends Abstraction implements Introdution{
+public class Implementation extends Abstraction implements Introdution, DoSomething{
 
 	@Override
 	public void doYourself() {
@@ -7,6 +7,11 @@ public class Implementation extends Abstraction implements Introdution{
 	}
 	public void printIntroduce(){
 		System.out.println("너의 이름은 : " + name);
+	}
+	@Override
+	public void doThat() {
+		// TODO Auto-generated method stub
+		System.out.println("자기소개를 합니다.");
 	}
 
 }
