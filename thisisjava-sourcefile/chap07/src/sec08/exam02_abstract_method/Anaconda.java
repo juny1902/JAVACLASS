@@ -1,18 +1,18 @@
 package sec08.exam02_abstract_method;
 
-public class Dog extends Animal {
-	public Dog() {
-		this.kind = "Æ÷À¯·ù";
-	}
+public class Anaconda extends Animal{
 
 	@Override
 	public void sound() {
-		System.out.println("¸Û¸Û");
+		// TODO Auto-generated method stub
+		System.out.println("Shhhhhhhh...");
 	}
 
 	@Override
 	public void move() {
 		// TODO Auto-generated method stub
-		System.out.println("ÇíÇíÇíÇí");
+		System.out.println("½º½º½Á");
 	}
+	
+
 }

@@ -5,7 +5,12 @@ public class PhoneExample {
 		// Phone phone = new Phone(); //(x)
 
 		SmartPhone smartPhone = new SmartPhone("È«±æµ¿");
-
+		TouchPhone notSmart = new TouchPhone("±è³¦³¦", 5);
+		
+		notSmart.turnOn();
+		notSmart.scrSize();
+		notSmart.turnOff();
+		
 		smartPhone.turnOn();
 		smartPhone.internetSearch();
 		smartPhone.turnOff();
