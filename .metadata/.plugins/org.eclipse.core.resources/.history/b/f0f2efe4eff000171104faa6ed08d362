@@ -2,12 +2,12 @@ package sec03_try_catch_finally;
 
 public class TryCatchFinallyExample {
 	public static void main(String[] args) {
-		try {
+		// try {
 			Class clazz = Class.forName("java.lang.String");
 			System.out.println(clazz.getName());
-		} catch(ClassNotFoundException e) {
+		// } catch(ClassNotFoundException e) {
 			System.out.println("클래스가 존재하지 않습니다.");
-		}
+		// }
 	}
 }
 
