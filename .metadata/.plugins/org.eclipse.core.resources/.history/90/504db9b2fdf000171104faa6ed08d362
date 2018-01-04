@@ -13,7 +13,7 @@ public class AccountExample {
 			String message = e.getMessage();
 			System.out.println(message);
 			System.out.println();
-			// e.printStackTrace();
+			e.printStackTrace();
 		}
 	}
 }
