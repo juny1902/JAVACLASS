@@ -1,0 +1,21 @@
+import java.awt.List;
+import java.util.Stack;
+
+import javax.xml.soap.Node;
+
+enum Operator {
+	PLUS, MINUS, MULTI, DIV
+}
+
+class StackCalculator {
+	private Object data;
+	private Node nextNode;
+	
+	Node(Object data){
+		this
+	}
+}
+
+public class StackCalcExample {
+
+}

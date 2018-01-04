@@ -1,0 +1,6 @@
+
+public interface DoSomething {
+	static void doBasic(){
+		
+	}
+}

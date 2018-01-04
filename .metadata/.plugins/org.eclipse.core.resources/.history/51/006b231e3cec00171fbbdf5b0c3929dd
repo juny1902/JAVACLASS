@@ -1,0 +1,16 @@
+
+public class Tire {
+	int radius;
+	int n_tires;
+	String material;
+
+	public void setMaterial(String a) {
+		this.material = a;
+	}
+
+	public Tire(int r, int n) {
+		this.radius = r;
+		this.n_tires = n;
+		System.out.println("엔진을 가지고 있음.");
+	}
+}

@@ -1,0 +1,14 @@
+public class ErrorCatch {
+	
+	public static void main(String[] args) {
+		class A{
+			String a;
+			int b;
+		}
+		A a = new A();
+		A b;
+		b = a;
+		System.out.println(a.hashCode());
+		System.out.println(b.hashCode());
+	}
+}

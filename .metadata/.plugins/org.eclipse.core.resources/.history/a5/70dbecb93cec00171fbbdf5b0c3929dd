@@ -1,0 +1,35 @@
+
+public class CarExample {
+	public static void getDyno(Motion a) {
+		for (int t = 1; t < 5; t++) {
+			a.Accelate();
+		}
+		for (int t = 1; t > 5; t--) {
+			a.Brake();
+		}
+		for (int i = -180; i < 180; i += 60) {
+			a.turn(i);
+		}
+		for (int i = 180; i > -180; i -= 60) {
+			a.turn(i);
+		}
+	}
+
+	public static void main(String[] args) {
+		Car tico = new Car(3, 900, 10, 2);
+		Car accent = new Car(4, 1500, 14, 2);
+		Car grand = new Car(4, 2700, 19, 4);
+		Car benz = new Car(8, 5000, 20, 4);
+		Car monster = new Car(16, 1300, 30, 6);
+		tico.carInfo();
+		getDyno(tico);
+		accent.carInfo();
+		getDyno(accent);
+		grand.carInfo();
+		getDyno(grand);
+		benz.carInfo();
+		getDyno(benz);
+		monster.carInfo();
+		getDyno(monster);
+	}
+}

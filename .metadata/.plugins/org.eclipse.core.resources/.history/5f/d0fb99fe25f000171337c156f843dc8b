@@ -1,0 +1,7 @@
+
+public interface Introdution {
+	void printIntroduce();
+	default void intro(){
+		System.out.println("기본 소개 입니다");
+	}
+}

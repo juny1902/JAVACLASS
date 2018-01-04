@@ -1,0 +1,7 @@
+
+public interface Introdution {
+	void printIntroduce();
+	default void intro(){
+		
+	}
+}

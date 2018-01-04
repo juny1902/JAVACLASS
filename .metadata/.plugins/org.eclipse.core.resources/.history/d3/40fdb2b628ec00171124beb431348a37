@@ -1,0 +1,22 @@
+class TUInterface{
+	private int xlimit;
+	private int ylimit;
+	
+	public void TUIFlush(char c){
+		for(int i=0; i<xlimit; i++){
+			for(int j=0; j<ylimit; j++){
+				System.out.print(c);
+			}
+			System.out.println();
+		}
+	}
+	public TUInterface(int xlimit, int ylimit){
+		
+	}
+	
+}
+public class TUI {
+	
+	TUInterface
+
+}

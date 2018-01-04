@@ -1,0 +1,8 @@
+class TUInterface{
+	public TUInterface(){
+		
+	}
+}
+public class TUI {
+
+}

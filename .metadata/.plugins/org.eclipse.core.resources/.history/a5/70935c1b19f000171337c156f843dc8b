@@ -1,0 +1,10 @@
+
+public class MySelf extends Abstraction {
+
+	@Override
+	public void doYourself() {
+		// TODO Auto-generated method stub
+		System.out.println("À¸›XÀ¸›X");
+	}
+	
+}

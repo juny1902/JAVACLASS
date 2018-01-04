@@ -1,0 +1,11 @@
+
+public class MainClass {
+	public static void byAbs(Abstraction a) {
+		a.doYourself();
+	}
+
+	public static void main() {
+		Implementation i = new Implementation();
+		MySelf m = new MySelf();
+	}
+}

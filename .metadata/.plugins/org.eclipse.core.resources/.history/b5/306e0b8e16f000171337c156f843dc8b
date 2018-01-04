@@ -1,0 +1,8 @@
+
+public abstract class Abstraction {
+	private String name;
+	
+	Abstraction(){
+		System.out.println("추상 클래스를 상속받았음.");
+	}
+}

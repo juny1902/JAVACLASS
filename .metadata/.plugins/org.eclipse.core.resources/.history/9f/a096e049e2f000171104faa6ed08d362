@@ -1,0 +1,11 @@
+import java.io.IOException;
+
+public class ErrorCatch {
+	class A{
+		String a;
+		int b;
+	}
+	public static void main(String[] args) {
+		
+	}
+}

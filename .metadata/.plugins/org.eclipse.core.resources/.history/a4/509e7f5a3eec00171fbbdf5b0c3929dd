@@ -1,0 +1,9 @@
+
+public class Truck extends Car {
+
+	public Truck(String name, int c, int cc, int r, int n, int w) {
+		super(name, c, cc, r, n);
+		// TODO Auto-generated constructor stub
+	}
+
+}

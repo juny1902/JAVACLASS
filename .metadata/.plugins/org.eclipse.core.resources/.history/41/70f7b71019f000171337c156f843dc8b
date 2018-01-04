@@ -1,0 +1,18 @@
+
+public class MainClass implements Introdution{
+	public static void byAbs(Abstraction a) { // 추상 클래스를 매개변수로 받음.
+		a.doYourself();
+	}
+
+	public static void main(String[] args) {
+		Implementation i = new Implementation();
+		MySelf m = new MySelf();
+	
+		byAbs(i);
+		byAbs(m);
+	}
+	
+	public void printIntroduce(){
+		System.out.println("나의 이름은 : " + name);
+	}
+}

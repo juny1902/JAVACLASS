@@ -1,0 +1,15 @@
+
+public class Truck extends Car {
+	private int max_weight;
+
+	public Truck(String name, int c, int cc, int r, int n, int w) {
+		super(name, c, cc, r, n);
+		this.max_weight = w;
+		// TODO Auto-generated constructor stub
+	}
+
+	public void truckInfo() {
+		super.carInfo();
+	}
+
+}

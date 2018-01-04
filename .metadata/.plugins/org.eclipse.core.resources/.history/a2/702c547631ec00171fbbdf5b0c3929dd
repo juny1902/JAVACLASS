@@ -1,0 +1,6 @@
+
+public enum Days {
+	AWAIT_MOTION,
+	ON_DETECT,
+	
+}

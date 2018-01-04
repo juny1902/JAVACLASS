@@ -1,0 +1,9 @@
+public class Implementation extends Abstraction{
+
+	@Override
+	public void doYourself() {
+		// TODO Auto-generated method stub
+		System.out.println("추상 메소드는 여기서 구현.");
+	}
+
+}

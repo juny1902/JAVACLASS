@@ -1,0 +1,17 @@
+
+public class ErrorCatch {
+	public static void main(String[] args) {
+		try{
+			throw new ClassNotFoundException();
+			
+		}catch(ClassNotFoundException e){
+			System.out.println("클래스 없음.");
+			throw new NumberFormatException();
+		}catch(NumberFormatException e){
+			
+		}finally {
+			System.out.println("후호호");
+		}
+		
+	}
+}

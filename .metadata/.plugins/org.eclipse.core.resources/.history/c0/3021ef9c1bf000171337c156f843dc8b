@@ -1,0 +1,13 @@
+package sec08.exam01_abstract_class;
+
+public class TouchPhone extends Phone{
+
+	public TouchPhone(String owner, int scrSize) {
+		super(owner);
+		// TODO Auto-generated constructor stub
+	}
+	void scrSize(){
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class Sportscar extends Car{
+	private int lap_time;
+	private String Stage;
+	public Sportscar(String name, String color, int cc){
+		super(String name, String color, int cc);
+	}
+}

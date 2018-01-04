@@ -1,0 +1,6 @@
+interface C_Engine extends Engine{}
+public interface Motion {
+	void Accelate();
+	void Brake();
+	void turn();
+}

@@ -1,0 +1,15 @@
+
+public class Engine  {
+	protected int cylinder;
+	private int liter;
+	String name;
+
+	public void setName(String a) {
+		this.name = a;
+	}
+
+	public Engine(int c, int cc) {
+		this.cylinder = c;
+		this.liter = cc;
+	}
+}

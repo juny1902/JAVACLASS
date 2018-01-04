@@ -1,0 +1,46 @@
+import java.awt.List;
+import java.util.Stack;
+
+import javax.xml.soap.Node;
+
+enum Operator {
+	PLUS, MINUS, MULTI, DIV
+}
+
+class StackCalculator {
+	private Node top;
+
+	private class Node {
+		private Object data;
+		private Node nextNode;
+
+		Node(Object data) {
+			this.data = data;
+			this.nextNode = null;
+		}
+	}
+
+	public StackCalculator() {
+		this.top = null;
+	}
+
+	public boolean empty() {
+		return (top == null);
+	}
+	
+	public void push(Object item){
+		Node newNode = new Node(item);
+		newNode.nextNode = top;
+		top = newNode;
+	}
+	public Object pop(){
+		Object tmp = peek();
+		top = top.nextNode;
+		return tmp;
+	}
+
+}
+
+public class StackCalcExample {
+
+}

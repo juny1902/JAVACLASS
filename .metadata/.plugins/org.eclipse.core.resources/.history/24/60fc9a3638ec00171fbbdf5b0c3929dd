@@ -1,0 +1,12 @@
+
+public class Engine {
+	int cylinder;
+	int liter;
+	String name;
+
+	public Engine(int c, int cc) {
+		this.cylinder = c;
+		this.liter = cc;
+		System.out.println("엔진을 가지고 있음.");
+	}
+}

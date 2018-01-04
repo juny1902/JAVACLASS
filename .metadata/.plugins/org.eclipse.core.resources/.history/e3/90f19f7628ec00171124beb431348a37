@@ -1,0 +1,12 @@
+class TUInterface{
+	private int xlimit;
+	private int ylimit;
+	public void 
+	public TUInterface(){
+		
+	}
+	
+}
+public class TUI {
+
+}
