@@ -7,5 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ErrorCatch"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="Hello World !"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="EX180104"/>
 </launchConfiguration>
