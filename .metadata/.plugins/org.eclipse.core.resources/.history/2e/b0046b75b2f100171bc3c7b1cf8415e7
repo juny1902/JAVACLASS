@@ -1,0 +1,56 @@
+class PartialSum extends Thread {
+
+	private long sum = 0;
+	private long start;
+	private long end;
+
+	public PartialSum(long start, long end) {
+		this.start = start;
+		this.end = end;
+	}
+
+	public static long[] getDivision(long target, int partition) {
+		long division[] = new long[partition + 1];
+		long area = target / partition;
+		for (int i = 0; i < partition + 1; i++) {
+			division[i] = area * i;
+			System.out.printf("division[%d] = %d\n", i, division[i]);
+		}
+		return division;
+	}
+
+	public long getSum() {
+		return sum;
+	}
+
+	public void run() {
+		for (long i = this.start; i <= this.end; i++) {
+			sum += i;
+		}
+	}
+}
+
+public class Test1 {
+	public static void main(String[] args) {
+		int partition = 8;
+		long target = 1000;
+		long[] division = PartialSum.getDivision(target, partition);
+		long sum = 0;
+		PartialSum[] s;
+		for (int i = 0; i < division.length-1; i++) {
+			s[i] = new PartialSum(division[i], division[i + 1]);
+			s[i].start();
+		}
+
+		for (int i = 0; i < division.length; i++) {
+			try {
+				s[i].join();
+				sum += s[i].getSum();
+			} catch (InterruptedException e) {
+				System.out.println("Thread had been interrupted.");
+			}
+		}
+		System.out.println(sum);
+	}
+
+}
