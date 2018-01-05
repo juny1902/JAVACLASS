@@ -19,7 +19,7 @@ public class StatePrintThread extends Thread {
 			}
 			try {
 				//0.5초간 일시 정지
-				Thread.sleep(500);
+				Thread.sleep(500); // Thread will have TIMED_WAITING status for this moment.
 			} catch(Exception e) {}
 		}
 	}

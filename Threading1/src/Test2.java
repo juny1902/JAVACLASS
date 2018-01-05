@@ -1,11 +1,11 @@
-class PartialSum extends Thread {
+class PartialSum2 extends Thread {
 
 	private long sum = 0;
 	private static long total_sum = 0;
 	private long start;
 	private long end;
 
-	public PartialSum(long start, long end) {
+	public PartialSum2(long start, long end) {
 		this.start = start;
 		this.end = end;
 	}

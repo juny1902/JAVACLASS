@@ -35,8 +35,8 @@ class PartialSum extends Thread {
 
 public class Test1 {
 	public static void main(String[] args) {
-		final int n_threads = 8;
-		final long target = 2000000000;
+		final int n_threads = 4;
+		final long target = 3141592;
 
 		long[] division = PartialSum.getDivision(target, n_threads);
 		long sum = 0;
@@ -66,7 +66,6 @@ public class Test1 {
 		e_time = System.currentTimeMillis();
 		System.out.println("총 합 : " + sum);
 		System.out.println("소요 시간 : " + (e_time - s_time) + "[ms]" + " ... in " + n_threads + " Threads");
-		System.out.println("스레드 당 약 " + ((double)(e_time - s_time)/n_threads) + "[ms] 소요.");
 
 	}
 
