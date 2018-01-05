@@ -1,8 +1,7 @@
-import java.sql.Time;
-
 class PartialSum extends Thread {
 
 	private long sum = 0;
+	private static long total_sum = 0;
 	private long start;
 	private long end;
 
@@ -29,6 +28,7 @@ class PartialSum extends Thread {
 		for (long i = this.start + 1; i <= this.end; i++) {
 			sum += i;
 		}
+		total_sum += sum;
 		System.out.printf("[%s] %d 부터 %d 까지 더해서 %d.\n", this.getName(), this.start + 1, this.end, this.sum);
 	}
 }
@@ -48,6 +48,7 @@ public class Test1 {
 		PartialSum[] s = new PartialSum[division.length - 1];
 
 		s_time = System.currentTimeMillis();
+		
 		for (int i = 0; i < division.length - 1; i++) {
 			s[i] = new PartialSum(division[i], division[i + 1]);
 			s[i].start();
@@ -61,10 +62,12 @@ public class Test1 {
 				System.out.println("Thread had been interrupted.");
 			}
 		}
+		
 		e_time = System.currentTimeMillis();
 		System.out.println("총 합 : " + sum);
 		System.out.println("소요 시간 : " + (e_time - s_time) + "[ms]" + " ... in " + n_threads + " Threads");
 		System.out.println("스레드 당 약 " + ((double)(e_time - s_time)/n_threads) + "[ms] 소요.");
+
 	}
 
 }
