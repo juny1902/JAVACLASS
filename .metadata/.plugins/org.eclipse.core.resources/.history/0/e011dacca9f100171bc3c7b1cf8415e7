@@ -1,0 +1,32 @@
+class PartialSum implements Runnable {
+
+	private int sum = 0;
+
+	@Override
+	public void run() {
+		for (int i = 0; i < 100; i++) {
+			sum += 1;
+		}
+		
+	}
+}
+
+public class Test1 {
+	public static void main(String[] args) throws InterruptedException {
+		Thread[] t = new Thread[8];
+		Runnable[] s = new PartialSum[8];
+		int sum = 0;
+		for (int i = 0; i < 8; i++) {
+			s[i] = new PartialSum();
+			t[i] = new Thread(s[i]);
+			t[i].run();
+		}
+		for (int i = 0; i< 8; i++) {
+			t[i].join();
+			sum += s[i].g
+		}
+		
+		System.out.println(sum);
+	}
+
+}

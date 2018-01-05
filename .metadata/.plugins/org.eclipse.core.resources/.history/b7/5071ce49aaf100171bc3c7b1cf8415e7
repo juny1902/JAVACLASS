@@ -1,0 +1,30 @@
+class PartialSum extends Thread {
+
+	private long sum = 0;
+
+	public long getSum() {
+		return sum;
+	}
+
+	public void run() {
+		for (int i = 0; i < 100; i++) {
+			sum += 1;
+		}
+
+	}
+}
+
+public class Test1 {
+	public static void main(String[] args) {
+		PartialSum s = new PartialSum();
+		s.start();
+		
+		try{
+			s.join();
+		}catch(InterruptedException e){
+			
+		}
+		System.out.println(s.getSum());
+	}
+
+}

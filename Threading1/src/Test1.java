@@ -1,33 +1,39 @@
-class ThreadSum extends Thread {
+class PartialSum extends Thread {
 
-	private int sum = 0;
+	private long sum = 0;
+	private long[] division = null;
 
-	@Override
-	public void run() {
-		for (int i = 0; i < 1000; i++) {
-			sum += 1;
+	public PartialSum(long start, long end, int partition) {
+		division = new long[partition + 1];
+		long area = (end - start) / partition;
+		for (int i = 0; i < partition + 1; i++) {
+			division[i] = area * i;
+			System.out.printf("division[%d] = %d\n", i, division[i]);
 		}
 	}
 
-	public int getSum() {
+	public long getSum() {
 		return sum;
+	}
+
+	public void run() {
+		for (int i = 1; i <= 100; i++) {
+			sum += i;
+		}
 	}
 }
 
 public class Test1 {
-	public static void main(String[] args) throws InterruptedException {
-		ThreadSum[] t = new ThreadSum[8];
-		int sum = 0;
-		for (int i = 0; i < 8; i++) {
-			t[i] = new ThreadSum();
-			t[i].run();
+	public static void main(String[] args) {
+		PartialSum s = new PartialSum(0, 1000, 4);
+		s.start();
+
+		try {
+			s.join();
+		} catch (InterruptedException e) {
+
 		}
-		for (int i = 0; i< 8; i++) {
-			t[i].join();
-			sum += t[i].getSum();
-		}
-		
-		System.out.println(sum);
+		System.out.println(s.getSum());
 	}
 
 }

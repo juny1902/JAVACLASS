@@ -1,0 +1,34 @@
+class PartialSum extends Thread {
+
+	private long sum = 0;
+	private long division = 0;
+	public PartialSum(long start, long end, long partition){
+		long division = (end-start)/partition;
+		this.division = division;
+	}
+	
+	public long getSum() {
+		return sum;
+	}
+	
+	public void run() {
+		for (int i = 1; i <= 100; i++) {
+			sum+=i;
+		}
+	}
+}
+
+public class Test1 {
+	public static void main(String[] args) {
+		PartialSum s = new PartialSum();
+		s.start();
+
+		try {
+			s.join();
+		} catch (InterruptedException e) {
+
+		}
+		System.out.println(s.getSum());
+	}
+
+}
