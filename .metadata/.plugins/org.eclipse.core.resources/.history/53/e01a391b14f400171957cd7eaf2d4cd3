@@ -1,0 +1,7 @@
+import java.util.LinkedList;
+
+public class LinkedListTest {
+	public static void main(String[] args){
+		List<int> seq = new LinkedList<int>();
+	}
+}

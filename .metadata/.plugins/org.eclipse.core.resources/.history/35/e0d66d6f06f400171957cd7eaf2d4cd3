@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class notifyTime extends Thread {
+	int t = 0;
+
+	@Override
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(1000);
+				t++;
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.printf("%d 초 경과.\n", t);
+		}
+	}
+}
+
+public class daemonTest {
+	public static void main(String[] args){
+		notifyTime a = new notifyTime();
+		a.start();
+		a.setDaemon(true);
+		Scanner s = new Scanner(System.in);
+		long sum = 0;
+		while(true){
+			System.out.print("아무 숫자나 입력하세요 (0 입력하면 종료.) : ");
+			sum += Long.parseLong(s.nextLine());
+			System.out.printf("누적된 값은 %d 입니다\n",sum);
+		}
+		s.close();
+	}
+
+}

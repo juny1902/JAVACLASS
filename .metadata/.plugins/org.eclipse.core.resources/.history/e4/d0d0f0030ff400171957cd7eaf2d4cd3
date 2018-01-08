@@ -1,0 +1,70 @@
+class Quad extends Thread {
+	double t = 0;
+	public Quad(ThreadGroup a, String b){
+		super(a,b);
+	}
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			t += 0.5;
+			System.out.printf("[%s] %.2f 초 경과\n", getName(),t);
+		}
+	}
+}
+
+class One extends Thread {
+	double t = 0;
+	public One(ThreadGroup a, String b){
+		super(a,b);
+	}
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.printf("[%s] 땡 !",getName());
+		}
+	}
+}
+
+class Octa extends Thread {
+	double t = 0;
+	public Octa(ThreadGroup a, String b){
+		super(a,b);
+	}
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(250);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			t += 0.25;
+			System.out.printf("[%s] %.2f 초 경과 !\n",getName(),t);
+		}
+	}
+}
+
+public class groupThread {
+	public static void main(String[] args) {
+		ThreadGroup grp = new ThreadGroup("Timers");
+		Quad a = new Quad(grp, "4분음표");
+		One b = new One(grp, "온음표");
+		Octa c = new Octa(grp,"8분음표");
+		grp.setDaemon(true);
+		a.start();
+		b.start();
+		c.start();
+		while(true){
+		}
+	}
+}

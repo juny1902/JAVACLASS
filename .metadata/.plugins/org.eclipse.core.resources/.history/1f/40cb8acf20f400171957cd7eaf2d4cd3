@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class SetTest {
+	public static void main(String[] args){
+		Set<String> hashTest = new HashSet<String>();
+		Set<String> treeTest = new TreeSet<String>();
+		
+		
+		hashTest.add("박준영"); // 해쉬값에 의해 순서 바뀔 수 있음 그러나 무관(순서없이 저장하는 타입)
+		hashTest.add("김철철");
+		hashTest.add("홍할황");
+		hashTest.add("곽박밥");
+		hashTest.add("박준영"); // 같은객체 존재 못함 - 무시됨(객체가 아닌 내부 데이터로 판단)
+		Iterator<String> hashItr = hashTest.iterator();
+		
+		treeTest.add("바오밥나무");
+		treeTest.add("소나무");
+		treeTest.add("버드나무");
+		treeTest.add("소나무");
+		treeTest.add("벚나무");
+		Iterator<String> treeItr = treeTest.iterator();
+		
+		
+		while(hashItr.hasNext()){ // 다음 객체가 존재하면 ?
+			String str = hashItr.next(); // 다음 객체의 내용을 읽음.
+			System.out.println(str);
+		}
+		System.out.println();
+		while(treeItr.hasNext()){ // 다음 객체가 존재하면 ?
+			String str = treeItr.next(); // 다음 객체의 내용을 읽음.
+			System.out.println(str);
+		}
+	}
+}

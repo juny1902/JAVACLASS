@@ -1,0 +1,67 @@
+class Quad extends Thread {
+	double t = 0;
+	public test1(ThreadGroup a, String b){
+		super(a,b);
+	}
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			t += 0.5;
+			System.out.printf("[%s] %.2f 段 井引\n", getName(),t);
+		}
+	}
+}
+
+class One extends Thread {
+	double t = 0;
+	public test2(ThreadGroup a, String b){
+		super(a,b);
+	}
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.printf("[%s] 強 !",getName());
+		}
+	}
+}
+
+class SixTeenth extends Thread {
+	double t = 0;
+	public test2(ThreadGroup a, String b){
+		super(a,b);
+	}
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.printf("[%s] 強 !",getName());
+		}
+	}
+}
+
+public class groupThread {
+	public static void main(String[] args) {
+		ThreadGroup grp = new ThreadGroup("Timers");
+		test1 a = new test1(grp, "checkMS");
+		test2 b = new test2(grp, "checkMS");
+		grp.setDaemon(true);
+		a.start();
+		b.start();
+		while(true){
+		}
+	}
+}

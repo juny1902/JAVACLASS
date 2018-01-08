@@ -1,0 +1,8 @@
+class notifyTime extends Thread{
+	public void run(){
+		
+	}
+}
+public class daemonTest {
+
+}

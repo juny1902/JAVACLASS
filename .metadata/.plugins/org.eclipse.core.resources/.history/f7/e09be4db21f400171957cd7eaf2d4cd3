@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class MapTest {
+	public static void main(String[] args){
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		Set<String> keySet = map.keySet();
+		Iterator<String> keyIterator =  keySet.iterator();
+		while(keyIterator.hasNext()){
+			String key = keyIterator.next();
+			Integer value = map.get(key);
+		}
+	}
+}

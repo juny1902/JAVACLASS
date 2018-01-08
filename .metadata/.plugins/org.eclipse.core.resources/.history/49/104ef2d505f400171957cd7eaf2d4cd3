@@ -1,0 +1,11 @@
+class notifyTime extends Thread{
+	@Override
+	public void run(){
+		while(true){
+			Thread.sleep(1000);
+		}
+	}
+}
+public class daemonTest {
+
+}

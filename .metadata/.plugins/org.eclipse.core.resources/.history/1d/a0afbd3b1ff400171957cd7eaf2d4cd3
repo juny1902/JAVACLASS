@@ -1,0 +1,58 @@
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
+
+class Test {
+	private String ID;
+	private String PW;
+	private int age;
+	private String City;
+	public Test(String ID, String PW, int age, String City) {
+		this.ID = ID;
+		this.PW = PW;
+		this.age = age;
+		this.City = City;
+	}
+
+	public void showInfo() {
+		System.out.printf("ID : %s , PW : %s , AGE : %d, City : %s\n", ID, PW, age, City);
+	}
+}
+
+public class LinkedListTest {
+	public static void main(String[] args) {
+		// <E> 은 Type Parameter. 원하는 타입 선택.
+		List<String> arr = new Vector<String>(); // 벡터 리스트 (ArrayList, Thread-Safe (Allows only a thread at the time.)
+		List<String> seq = new LinkedList<String>(); // 연결 리스트 (빈번한 삽입/삭제 발생시 효율적.)
+		List<Integer> nums = Arrays.asList(3, 12, 7, 5, 9, 2, 33); // Wrapper Class 로 지정.
+		List<Test> test = new LinkedList<Test>();
+		// 두 리스트의 사용 방법은 똑같음.
+		for (Integer n : nums) {
+			System.out.println(n);
+		}
+		a = System.nanoTime();
+
+		arr.add("Good Bye, ");
+		arr.add("Friend !");
+		seq.add("Hello, ");
+		seq.add("World !");
+
+		System.out.println(seq.contains("Hello, ")); // 객체 존재 여부 확인.
+		System.out.println(seq.size()); // 객체의 수 반환.
+		System.out.print(seq.get(0)); // 특정 인덱스의 객체를 얻음.
+		System.out.println(seq.get(1));
+		System.out.print(arr.get(0));
+		System.out.println(arr.get(1));
+
+		test.add(new Test("Ryan", "ASDF1234", 25, "Ansan"));
+		test.add(new Test("Peter", "fghj1234", 36, "Los Angeles"));
+		test.add(new Test("Hello", "a2gb1234", 100, "Mars"));
+		test.add(new Test("Grauy", "GGGfffGG", 0, "Tokyo"));
+		test.remove(1); // Peter 삭제, Hello 가 1로 당겨짐.
+		System.out.println(test.size()); // 객체의 수 반환.
+		for (Test t : test) {
+			t.showInfo();
+		}
+	}
+}

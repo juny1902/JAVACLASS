@@ -1,0 +1,17 @@
+class test extends Thread{
+	double t = 0;
+	public void run(){
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.printf("%.2f ÃÊ °æ°ú\n",t);
+	}
+}
+public class groupThread {
+	public static void main(String[] args){
+		
+	}
+}

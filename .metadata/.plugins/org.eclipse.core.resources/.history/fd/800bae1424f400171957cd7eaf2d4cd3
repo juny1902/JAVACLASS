@@ -1,0 +1,60 @@
+import java.util.*;
+
+class Member {
+	private String name;
+	private int age;
+
+	public Member(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	public void showInfo() {
+		System.out.printf("%s:%d세", name, age);
+	}
+	
+	@Override
+	public int hashCode(){
+		return name.hashCode() + age;
+	}
+}
+
+public class SetTest {
+	public static void main(String[] args) {
+		Set<Member> hashTest = new HashSet<Member>();
+		Set<Member> treeTest = new TreeSet<Member>();
+
+		hashTest.add(new Member("박준영", 25)); // 해쉬값에 의해 순서 바뀔 수 있음 그러나 무관(순서없이 저장하는 타입)
+		hashTest.add(new Member("김철철",30));
+		hashTest.add(new Member("홍할황",60));
+		hashTest.add(new Member("곽박밥",90));
+		hashTest.add(new Member("박준영",25)); // 같은객체 존재 못함 - 무시됨(객체가 아닌 내부 데이터로 판단)
+		Iterator<Member> hashItr = hashTest.iterator();
+
+		treeTest.add(new Member("바오밥나무",300));
+		treeTest.add(new Member("소나무",900));
+		treeTest.add(new Member("버드나무",1300));
+		treeTest.add(new Member("소나무",700)); // 같은객체 존재 못함 - 무시됨(객체가 아닌 내부 데이터로 판단)
+		treeTest.add(new Member("벚나무",418));
+		Iterator<Member> treeItr = treeTest.iterator();
+
+		while (hashItr.hasNext()) { // 다음 객체가 존재하면 ?
+			Member tmp = hashItr.next(); // 다음 객체의 내용을 읽음.
+			tmp.showInfo();
+		}
+
+		System.out.println();
+
+		while (treeItr.hasNext()) { // 다음 객체가 존재하면 ?
+			Member tmp = treeItr.next(); // 다음 객체의 내용을 읽음.
+			tmp.showInfo();
+		}
+
+		hashTest.clear();
+		treeTest.clear();
+		if (hashTest.isEmpty() && treeTest.isEmpty()) {
+			System.out.println();
+			System.out.println("두 셋이 모두 비어있음.");
+		}
+	}
+}

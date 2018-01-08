@@ -1,0 +1,13 @@
+import java.util.List;
+import java.util.Scanner;
+
+public class GenericTest {
+	public static void main(String[] args){
+		List<String> books = null;
+		Scanner s = new Scanner(System.in);
+		while(true){
+			books.add(s.nextLine());
+		}
+		
+	}
+}

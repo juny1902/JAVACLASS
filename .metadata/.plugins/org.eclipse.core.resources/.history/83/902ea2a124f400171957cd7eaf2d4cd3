@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class MapTest {
+	public static void main(String[] args) {
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		Set<String> keySet = map.keySet();
+
+		map.put("±è´ö¹è", 90);
+		map.put("È«ÂûÆÈ", 72);
+		map.put("¹Ú°û¹ä", 36);
+		map.put("±èÅ´±è", 54);
+		map.put("Á¤Ã»Á´", 12);
+
+		Iterator<String> keyIterator = keySet.iterator();
+
+		while (keyIterator.hasNext()) {
+			String key = keyIterator.next();
+			Integer value = map.get(key);
+			System.out.printf("%s ÀÇ °ªÀº %d ÀÔ´Ï´Ù.\n", key, value);
+		}
+	}
+}

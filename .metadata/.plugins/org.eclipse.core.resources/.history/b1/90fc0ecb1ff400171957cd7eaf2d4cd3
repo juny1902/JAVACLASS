@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class SetTest {
+	public static void main(String[] args){
+		Set<String> hashTest = new HashSet<String>();
+		Set<String> treeTest = new TreeSet<String>();
+		Iterator<String> hashItr = hashTest.iterator();
+		Iterator<String> treeItr = treeTest.iterator();
+		
+		hashTest.add("¹ÚÁØ¿µ");
+	}
+}

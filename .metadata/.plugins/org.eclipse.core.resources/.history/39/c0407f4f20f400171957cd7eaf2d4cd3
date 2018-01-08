@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class SetTest {
+	public static void main(String[] args){
+		Set<String> hashTest = new HashSet<String>();
+		Set<String> treeTest = new TreeSet<String>();
+		
+		
+		hashTest.add("박준영");
+		hashTest.add("김철철");
+		hashTest.add("홍할황");
+		hashTest.add("곽박밥");
+		hashTest.add("박준영"); // 같은객체 존재 못함 - 무시됨(객체가 아닌 내부 데이터로 판단)
+		
+		Iterator<String> hashItr = hashTest.iterator();
+		Iterator<String> treeItr = treeTest.iterator();
+		
+		
+		while(hashItr.hasNext()){ // 다음 객체가 존재하면 ?
+			String str = hashItr.next();
+			System.out.println(str);
+		}
+	}
+}

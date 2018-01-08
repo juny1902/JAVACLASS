@@ -1,0 +1,8 @@
+class test extends Thread{
+	
+}
+public class groupThread {
+	public static void main(String[] args){
+		
+	}
+}

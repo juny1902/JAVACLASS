@@ -1,5 +1,0 @@
-
-public interface Motion {
-	void Accelation();
-	void 
-}

@@ -1,6 +1,0 @@
-
-public class Engine {
-	int cylinder;
-	int liter;
-	String name;
-}

@@ -1,0 +1,43 @@
+class test1 extends Thread {
+	double t = 0;
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			t += 0.5;
+			System.out.printf("%.2f ÃÊ °æ°ú\n", t);
+		}
+	}
+}
+
+class test2 extends Thread {
+	double t = 0;
+
+	public void run() {
+		while (true) {
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.printf("¶¯ !");
+		}
+	}
+}
+
+public class groupThread {
+	public static void main(String[] args) {
+		ThreadGroup grp = new ThreadGroup("Timers")
+		test1 a = new test1(grp, a,"Millisecond");
+		test2 b = new test2(b,"Bell");
+		a.setDaemon(true);
+		b.setDaemon(true);
+		a.start();
+		b.start();
+	}
+}
