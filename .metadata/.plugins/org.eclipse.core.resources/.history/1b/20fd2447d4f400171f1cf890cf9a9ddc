@@ -1,0 +1,16 @@
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+public class PropertyTest {
+	public static void main(String[] args){
+		Properties properties = new Properties();
+		String path = PropertyTest.class.getResource("test.properties").getPath();
+		try {
+			properties.load(new FileReader("test.properties"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

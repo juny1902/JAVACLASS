@@ -1,0 +1,13 @@
+import java.util.HashMap;
+import java.util.Map;
+
+class MapContinued {
+	public void A() {
+
+		Map<Integer, String> map = new HashMap<Integer, String>();
+	}
+}
+
+public class Test1 {
+
+}

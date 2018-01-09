@@ -1,7 +1,0 @@
-import java.util.*;
-
-public class MapTest {
-	public static void main(String[] args){
-		Map<Integer,String> map = HashMap<Integer, String>();
-	}
-}

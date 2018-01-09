@@ -1,0 +1,12 @@
+import java.util.Map;
+
+class MapContinued {
+	public void A() {
+
+		Map<Integer, String> map = new Map<Integer, String>();
+	}
+}
+
+public class Test1 {
+
+}

@@ -1,0 +1,8 @@
+import java.util.Map;
+
+class MapContinued{
+	Map<Integer, String> map = new Map();
+}
+public class Test1 {
+
+}

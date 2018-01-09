@@ -1,7 +1,6 @@
 package sec05.exam01_treeset;
 
 import java.util.TreeSet;
-
 public class TreeSetExample1 {
 	public static void main(String[] args) {
 		TreeSet<Integer> scores = new TreeSet<Integer>();

@@ -1,0 +1,8 @@
+import java.util.Properties;
+
+public class PropertyTest {
+	public static void main(String[] args){
+		Properties properties = new Properties();
+		properties.load0("./test.properties");
+	}
+}
