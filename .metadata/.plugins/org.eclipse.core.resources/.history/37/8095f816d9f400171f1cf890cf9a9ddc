@@ -32,6 +32,8 @@ public class TreeSetExample1 {
 		score = scores.ceiling(new Integer(74));
 		System.out.println("74점 이거나 바로 위의 점수: " + score + "\n");
 
+		
+		
 		System.out.println("내림차 정렬 결과 : ");
 		NavigableSet<Integer> desSet = scores.descendingSet();
 		for (Integer s : desSet) {

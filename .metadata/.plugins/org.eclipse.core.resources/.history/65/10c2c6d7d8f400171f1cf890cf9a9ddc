@@ -37,14 +37,8 @@ public class TreeSetExample1 {
 		for (Integer s : desSet) {
 			System.out.print(s + " ");
 		}
-		
-		System.out.println("\n오름차 정렬 결과 : ");
-		NavigableSet<Integer> acsSet = desSet.descendingSet(); // 내림차를 다시 내림차 정렬
-		for (Integer s : acsSet) {
-			System.out.print(s + " ");
-		}
 
-		System.out.println("\n\n90~100 사이의 점수 검색.");
+		System.out.println("90~100 사이의 점수 검색.");
 		NavigableSet<Integer> rangeSet = scores.subSet(90, true, 100, true);
 		for (Integer s : rangeSet) {
 			System.out.println("구간에 해당하는 점수는 : " + s);
