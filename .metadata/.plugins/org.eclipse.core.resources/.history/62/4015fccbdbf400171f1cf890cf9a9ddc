@@ -1,0 +1,19 @@
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class StkQue {
+	public static void main(String[] args) {
+		Stack<String> s = new Stack<String>();
+		Scanner scn = new Scanner(System.in);
+		while (scn.hasNextLine()) {
+			s.push(scn.nextLine());
+		}
+		Iterator<String> itr = s.iterator();
+		for(String n : itr){
+			
+		}
+
+	}
+
+}

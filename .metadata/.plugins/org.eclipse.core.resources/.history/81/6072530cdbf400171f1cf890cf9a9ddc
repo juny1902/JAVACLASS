@@ -1,0 +1,8 @@
+
+public class StkQue {
+	public static void main(String[] args){
+		Stack<Integer> s = new Stack<Integer>();
+		
+	}
+
+}

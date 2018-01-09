@@ -1,0 +1,17 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class IONetwork {
+	public static void main(){
+		try {
+			InputStream a = new FileInputStream("Test1.java");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+}

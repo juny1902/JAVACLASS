@@ -1,0 +1,9 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class IONetwork {
+	public static void main(){
+		InputStream a = new FileInputStream("Test1.java");
+	}
+}

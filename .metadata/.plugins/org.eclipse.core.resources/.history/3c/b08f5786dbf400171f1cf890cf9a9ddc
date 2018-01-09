@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.util.Stack;
+
+public class StkQue {
+	public static void main(String[] args){
+		Stack<String> s = new Stack<String>();
+		Scanner scn = new Scanner(System.in);
+		s.push(scn.nextLine());
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.util.Stack;
+
+public class StkQue {
+	public static void main(String[] args){
+		Stack<Integer> s = new Stack<Integer>();
+		Scanner scn = new Scanner(System.in);
+		String tmp = 0;
+		while(true){
+			tmp = scn.nextInt();
+			switch(tmp)
+		}
+		
+	}
+
+}

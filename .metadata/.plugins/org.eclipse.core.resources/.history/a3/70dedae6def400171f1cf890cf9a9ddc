@@ -1,0 +1,14 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class IONetwork {
+	public static void main() throws IOException{
+		InputStream in = new FileInputStream("IONetwork.java");
+		int readByte;
+		while(readByte = in.read()){
+			
+		}
+	}
+}

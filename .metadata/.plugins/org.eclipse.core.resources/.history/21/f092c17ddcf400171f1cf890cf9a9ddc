@@ -1,0 +1,23 @@
+import java.util.Iterator;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class StkQue {
+	public static void
+	public static void main(String[] args) {
+		Stack<String> s = new Stack<String>();
+		Scanner scn = new Scanner(System.in);
+		String tmp;
+		while (true) {
+			System.out.println("입력하세요 : ");
+			tmp = scn.nextLine();
+			if(tmp.isEmpty()) break;
+			s.push(tmp);
+		}
+		while(!s.isEmpty()){
+			System.out.printf("%s 입니다.\n", s.pop());
+		}
+
+	}
+
+}

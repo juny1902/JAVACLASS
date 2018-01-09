@@ -1,0 +1,14 @@
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+public class IONetwork {
+	public static void main(String[] args) throws IOException{
+		InputStream in = new FileInputStream("D:\\JAVACLASS\\EX180109\\src\\test.properties");
+		int readByte;
+		while((readByte = in.read()) != -1){
+			System.out.println("ÀÐÀº °ª : " + (char)readByte);
+		}
+		in.close();
+	}
+}
