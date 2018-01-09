@@ -6,12 +6,14 @@ import java.io.InputStream;
 public class ReadExample3 {
 
 	public static void main(String[] args) throws Exception {
-		InputStream is = new FileInputStream("C:/Temp/test.txt");
+		InputStream is = new FileInputStream(
+				"D:\\JAVACLASS\\thisisjava-sourcefile\\chap18\\src\\sec02\\exam01_inputstream_read\\ReadExample1.java");
 		int readByteNo;
-		byte[] readBytes = new byte[8];
-		readByteNo = is.read(readBytes, 2, 3);
-		for(int i=0; i<readBytes.length; i++) {
-			System.out.println(readBytes[i]);
+		byte[] readBytes = new byte[8]; // 0 0 0 0 0 0 0 0 할당
+		readByteNo = is.read(readBytes, 1, 6); // ㅁ ㅁ X X X 0 0 0 0 (ㅁ : 오프셋, X
+												// : 내용, 0 : 여백)
+		for (int i = 0; i < readBytes.length; i++) {
+			System.out.println((char)readBytes[i]);
 		}
 		is.close();
 	}

@@ -8,10 +8,10 @@ public class IONetwork {
 		int readByte;
 		while ((readByte = in.read()) != -1) { // 한 바이트 읽음.
 			if (readByte == '\n')
-				System.out.println("개행문자 읽음.");
-			if (readByte == '\0')
-				System.out.println("널문자 읽음.");
-			System.out.print((char) readByte); // 읽고 문자로 바꾸어 출력.
+				System.out.println();
+			// if (readByte == '\0')
+			// System.out.println("널문자 읽음.");
+			System.out.print((char)readByte); // 읽고 문자로 바꾸어 출력.
 		}
 		in.close();
 	}
