@@ -32,7 +32,7 @@ public class TreeSetExample1 {
 		
 		System.out.println("가장 작은 값인 " + scores.pollFirst() + " 꺼냄.");
 		
-		System.out.println("가장 큰 값인 " + scores.pollLast() + " 꺼냄.\n");
+		System.out.println("가장 큰 값인 " + scores.pollLast() + " 꺼냄.");
 		
 		while(!scores.isEmpty()) {
 			score = scores.pollFirst();

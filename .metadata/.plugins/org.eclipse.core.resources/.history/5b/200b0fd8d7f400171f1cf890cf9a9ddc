@@ -30,9 +30,9 @@ public class TreeSetExample1 {
 		score = scores.ceiling(new Integer(74));
 		System.out.println("74Á¡ ÀÌ°Å³ª ¹Ù·Î À§ÀÇ Á¡¼ö: " + score + "\n");
 		
-		System.out.println("°¡Àå ÀÛÀº °ªÀÎ " + scores.pollFirst() + " ²¨³¿.");
+		System.out.println(scores.pollFirst() + " ²¨³¿.");
 		
-		System.out.println("°¡Àå Å« °ªÀÎ " + scores.pollLast() + " ²¨³¿.\n");
+		System.out.println(scores.pollLast() + " ²¨³¿.");
 		
 		while(!scores.isEmpty()) {
 			score = scores.pollFirst();

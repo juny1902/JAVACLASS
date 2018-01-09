@@ -24,15 +24,11 @@ public class TreeSetExample1 {
 		score = scores.higher(new Integer(95));
 		System.out.println("95점 위의 점수: " + score + "\n");		
 		
-		score = scores.floor(new Integer(88));
-		System.out.println("88점 이거나 바로 아래 점수: " + score);
+		score = scores.floor(new Integer(95));
+		System.out.println("95점 이거나 바로 아래 점수: " + score);
 		
-		score = scores.ceiling(new Integer(74));
-		System.out.println("74점 이거나 바로 위의 점수: " + score + "\n");
-		
-		System.out.println("가장 작은 값인 " + scores.pollFirst() + " 꺼냄.");
-		
-		System.out.println("가장 큰 값인 " + scores.pollLast() + " 꺼냄.\n");
+		score = scores.ceiling(new Integer(85));
+		System.out.println("85점 이거나 바로 위의 점수: " + score + "\n");
 		
 		while(!scores.isEmpty()) {
 			score = scores.pollFirst();

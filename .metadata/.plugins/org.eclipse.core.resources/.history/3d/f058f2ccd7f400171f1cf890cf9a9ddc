@@ -30,9 +30,7 @@ public class TreeSetExample1 {
 		score = scores.ceiling(new Integer(74));
 		System.out.println("74점 이거나 바로 위의 점수: " + score + "\n");
 		
-		System.out.println("가장 작은 값인 " + scores.pollFirst() + " 꺼냄.");
-		
-		System.out.println("가장 큰 값인 " + scores.pollLast() + " 꺼냄.\n");
+		System.out.println(scores.pollFirst() + " 꺼냄.");
 		
 		while(!scores.isEmpty()) {
 			score = scores.pollFirst();
