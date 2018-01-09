@@ -7,8 +7,10 @@ public class WriteExample3 {
 
 	public static void main(String[] args) throws Exception {
 		Writer writer = new FileWriter("C:/Temp/test.txt");
-		char[] data = "ȫ�浿".toCharArray();
-		writer.write(data, 1, 2);
+		char[] data = "鼛靑膩出鼛於蠧藍".toCharArray(); // 유니코드 2바이트.
+		for (int i = 1; i < 8; i += 2) {
+			writer.write(data, i, 1);
+		}
 
 		writer.flush();
 		writer.close();

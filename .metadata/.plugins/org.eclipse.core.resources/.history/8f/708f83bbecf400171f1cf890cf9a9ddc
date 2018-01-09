@@ -1,0 +1,17 @@
+package sec02.exam04_writer_write;
+
+import java.io.FileWriter;
+import java.io.Writer;
+
+public class WriteExample3 {
+
+	public static void main(String[] args) throws Exception {
+		Writer writer = new FileWriter("C:/Temp/test.txt");
+		char[] data = "鼛셀膩렉鼛티蠧브".toCharArray();
+		writer.write(data, 1, 3);
+
+		writer.flush();
+		writer.close();
+	}
+
+}

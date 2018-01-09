@@ -12,7 +12,7 @@ public class SystemInExample1 {
 		System.out.print("메뉴를 선택하세요: ");
 		
 		InputStream is = System.in;
-		char inputChar = (char) is.read();			
+		char inputChar = (char) is.read();		
 		switch(inputChar) {
 			case '1':
 				System.out.println("예금 조회를 선택하셨습니다.");
