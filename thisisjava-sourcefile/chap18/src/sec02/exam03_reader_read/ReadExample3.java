@@ -8,7 +8,7 @@ public class ReadExample3 {
 	public static void main(String[] args) throws Exception {
 		Reader reader = new FileReader("C:/Temp/test.txt");
 		int readCharNo;
-		char[] cbuf = new char[4];
+		char[] cbuf = new char[4]; // 4글자 입력받음.
 		readCharNo = reader.read(cbuf, 1, 2);
 		for(int i=0; i<cbuf.length; i++) {
 			System.out.println(cbuf[i]);
