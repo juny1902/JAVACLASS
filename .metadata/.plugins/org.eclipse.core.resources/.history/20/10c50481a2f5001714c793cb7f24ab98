@@ -1,0 +1,14 @@
+package Neuron;
+
+class Neuron {
+	private double[] w;
+	private double[] x;
+	private double[] t;
+	public boolean node{
+		
+	}
+}
+
+public class Test {
+
+}

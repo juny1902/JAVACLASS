@@ -13,7 +13,7 @@ public class ServerExample {
 			serverSocket.bind(new InetSocketAddress("localhost", 5001));
 			while(true) {
 				System.out.println( "[연결 기다림]");
-				Socket socket = serverSocket.accept();
+				Socket socket = serverSocket.accept(); // 연결 될 때 까지 Block. (Listen)
 				InetSocketAddress isa = (InetSocketAddress) socket.getRemoteSocketAddress();
 				System.out.println("[연결 수락함] " + isa.getHostName());
 			}

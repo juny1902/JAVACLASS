@@ -1,0 +1,11 @@
+package networkTest;
+
+import java.net.Inet4Address;
+import java.net.InetAddress;
+
+public class Test1 {
+	public static void main(String[] args) {
+		InetAddress ia = InetAddress.getLocalHost();
+
+	}
+}

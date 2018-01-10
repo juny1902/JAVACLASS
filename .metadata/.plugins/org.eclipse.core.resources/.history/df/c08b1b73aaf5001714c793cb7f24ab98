@@ -1,0 +1,36 @@
+package networkTest;
+
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class ClientExample {
+	public static void main(String[] args) {
+		Socket socket = null;
+		boolean connected = false;
+		while (!connected) {
+			try {
+				socket = new Socket();
+				System.out.println("[연결 요청]");
+				socket.connect(new InetSocketAddress("localhost", 5001));
+				System.out.println("[연결 성공]");
+				connected = true;
+			} catch (Exception e) {
+				System.out.println("[연결 실패]");
+				connected = false;
+			}
+		}
+		OutputStream os;
+		String message;
+		Scanner scn = new Scanner(System.in);
+		while (connected) {
+			try {
+				os = socket.getOutputStream();
+				message = scn.nextLine();
+			} catch (Exception e) {
+
+			}
+		}
+	}
+}

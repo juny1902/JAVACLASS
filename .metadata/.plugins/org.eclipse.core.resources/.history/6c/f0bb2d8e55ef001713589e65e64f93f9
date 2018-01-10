@@ -1,7 +1,0 @@
-package ext1;
-
-public class Car implements Drive{
-	String name;
-	String color;
-	
-}

@@ -1,0 +1,19 @@
+package Neuron;
+
+class Neuron {
+	private double w1;
+	private double w2;
+	private double x1;
+	private double x2;
+	private double t;
+	public boolean node(){
+		return ((w1*x1+w2*x2)<=t);
+	}
+	public boolean setWeight(int ...){
+		
+	}
+}
+
+public class Test {
+
+}

@@ -1,0 +1,7 @@
+package networkTest;
+
+public class ClientExample {
+	public static void main(){
+		
+	}
+}

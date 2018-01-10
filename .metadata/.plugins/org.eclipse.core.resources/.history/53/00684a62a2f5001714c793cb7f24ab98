@@ -1,0 +1,11 @@
+package Neuron;
+
+class Neuron {
+	private double[] w;
+	private double[] x;
+	private double[] 
+}
+
+public class Test {
+
+}

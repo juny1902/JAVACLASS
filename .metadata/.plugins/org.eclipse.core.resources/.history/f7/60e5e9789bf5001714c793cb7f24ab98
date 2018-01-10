@@ -1,0 +1,16 @@
+package FileIOTest;
+
+import java.io.File;
+
+public class FileIOTest {
+	public static void main(String[] args){
+		File  = new Dir("D:\\FileIO");
+		File file = new File("D:\\test.txt");
+		dir.mkdir();
+		if(file.exists()){
+			file.delete();
+			file.createNewFile();
+		}
+		
+	}
+}

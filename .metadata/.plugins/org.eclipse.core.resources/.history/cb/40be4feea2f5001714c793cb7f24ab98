@@ -1,0 +1,27 @@
+package Neuron;
+
+class Neuron {
+	private double w1;
+	private double w2;
+	private double x1;
+	private double x2;
+	private double b;
+	private double t;
+
+	public boolean node() {
+		return ((w1 * x1 + w2 * x2) <= t);
+	}
+
+	public void setWeight(int[] w) {
+		if (w.length == 2) {
+			w1 = w[0];
+			w2 = w[1];
+		} else{
+			System.out.println("가중치 인자가 부족합니다.");
+		}
+	}
+}
+
+public class Test {
+
+}

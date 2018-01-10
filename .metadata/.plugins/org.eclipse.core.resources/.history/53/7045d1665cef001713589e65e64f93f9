@@ -1,5 +1,0 @@
-
-public class Sportscar extends Car{
-	private int lap_time;
-	private String Course;
-}

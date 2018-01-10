@@ -1,0 +1,7 @@
+package FileIOTest;
+
+public class FileIOTest {
+	public static void main(String[] args){
+		File file = new File();
+	}
+}
