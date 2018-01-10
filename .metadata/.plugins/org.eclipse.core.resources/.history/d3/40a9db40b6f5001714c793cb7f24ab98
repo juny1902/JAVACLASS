@@ -12,7 +12,7 @@ public class ServerExample {
 		ServerSocket serverSocket = null;
 		try {
 			serverSocket = new ServerSocket();		
-			serverSocket.bind(new InetSocketAddress("localhost", 8080));
+			serverSocket.bind(new InetSocketAddress("localhost", 5001));
 			while(true) {
 				System.out.println( "[연결 기다림]");
 				Socket socket = serverSocket.accept();
