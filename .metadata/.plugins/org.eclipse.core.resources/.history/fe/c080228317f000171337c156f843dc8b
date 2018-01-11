@@ -1,9 +1,0 @@
-
-public class MainClass {
-	public static void byAbs(Abstraction a){
-		
-	}
-	public static void main(){
-		Implementation i = new Implementation();
-	}
-}

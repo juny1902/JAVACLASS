@@ -1,7 +1,0 @@
-
-public class MainClass {
-	Implementation i = new Implementation();
-	public static void main(){
-		
-	}
-}
