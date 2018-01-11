@@ -12,7 +12,7 @@ public class ClientExample {
 		try {
 			socket = new Socket();
 			System.out.println( "[연결 요청]");
-			socket.connect(new InetSocketAddress("localhost", 8080));
+			socket.connect(new InetSocketAddress("192.168.1.85", 8080));
 			System.out.println( "[연결 성공]");
 			
 			byte[] bytes = null;
