@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
-<fullyQualifiedTypeName name="java.util.TreeMap"/>
-<fullyQualifiedTypeName name="MapContinued"/>
-<fullyQualifiedTypeName name="java.util.Properties"/>
-<fullyQualifiedTypeName name="java.io.FileReader"/>
-<fullyQualifiedTypeName name="PropertyTest"/>
-<fullyQualifiedTypeName name="java.net.URLDecoder"/>
-<fullyQualifiedTypeName name="java.util.NavigableMap"/>
 <fullyQualifiedTypeName name="java.util.NavigableSet"/>
 <fullyQualifiedTypeName name="java.util.Stack"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
@@ -43,21 +34,30 @@
 <fullyQualifiedTypeName name="java.awt.Label"/>
 <fullyQualifiedTypeName name="java.awt.Font"/>
 <fullyQualifiedTypeName name="java.awt.Button"/>
-<fullyQualifiedTypeName name="javafx.scene.text.Font"/>
 <fullyQualifiedTypeName name="javafx.scene.control.RadioButton"/>
 <fullyQualifiedTypeName name="java.awt.Checkbox"/>
-<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
-<fullyQualifiedTypeName name="java.awt.TextField"/>
 <fullyQualifiedTypeName name="java.net.URL"/>
-<fullyQualifiedTypeName name="javafx.event.EventHandler"/>
-<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
 <fullyQualifiedTypeName name="java.lang.Long"/>
 <fullyQualifiedTypeName name="org.omg.CORBA.portable.ApplicationException"/>
 <fullyQualifiedTypeName name="javafx.application.Application"/>
-<fullyQualifiedTypeName name="javafx.scene.Parent"/>
 <fullyQualifiedTypeName name="javafx.scene.transform.Scale"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Label"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Button"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.BorderPane"/>
+<fullyQualifiedTypeName name="javafx.scene.Parent"/>
+<fullyQualifiedTypeName name="javafx.scene.input.KeyEvent"/>
+<fullyQualifiedTypeName name="javafx.event.EventHandler"/>
+<fullyQualifiedTypeName name="java.awt.TextField"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Button"/>
+<fullyQualifiedTypeName name="javafx.scene.control.CheckBox"/>
+<fullyQualifiedTypeName name="javafx.application.Platform"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+<fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
 <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
+<fullyQualifiedTypeName name="javafx.fxml.Initializable"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Slider"/>
+<fullyQualifiedTypeName name="javafx.fxml.FXML"/>
+<fullyQualifiedTypeName name="javafx.beans.value.ChangeListener"/>
+<fullyQualifiedTypeName name="javafx.scene.text.Font"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextArea"/>
+<fullyQualifiedTypeName name="javafx.beans.binding.Bindings"/>
 </qualifiedTypeNameHistroy>

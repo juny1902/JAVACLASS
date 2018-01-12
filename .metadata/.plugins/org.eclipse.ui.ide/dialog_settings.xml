@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="D:\JAVACLASS\thisisjava-sourcefile\chap17"/>
 		<item value="D:\ChattingExample"/>
 		<item value="D:\JAVACLASS\thisisjava-sourcefile\chap18"/>
 		<item value="D:\JAVACLASS\thisisjava-sourcefile\chap15"/>

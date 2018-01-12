@@ -21,7 +21,7 @@ public class ClientBackground {
 
 	public void connect() {
 		try {
-			socket = new Socket("127.0.0.1", 7777);
+			socket = new Socket("192.168.1.85", 7777);
 			System.out.println("¼­¹ö ¿¬°áµÊ");
 
 			out = new DataOutputStream(socket.getOutputStream());

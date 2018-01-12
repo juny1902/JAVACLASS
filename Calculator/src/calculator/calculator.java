@@ -1,4 +1,4 @@
-package sec07.exam01_button;
+package calculator;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,16 +6,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class AppMain extends Application {
+public class calculator extends Application {
+
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Parent root = (Parent)FXMLLoader.load(getClass().getResource("root.fxml"));
+		// TODO Auto-generated method stub
+		Parent root = (Parent)FXMLLoader.load(getClass().getResource("calc.fxml"));
 		Scene scene = new Scene(root);
-		primaryStage.setTitle("AppMain");
+		
+		primaryStage.setTitle("Calculator");
 		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}
